@@ -4,15 +4,16 @@ import Image from 'next/image';
 import { useRef } from 'react';
 
 const About = () => {
-	const containerRef = useRef();
+	const containerRef =
+		useRef() as React.MutableRefObject<HTMLInputElement>;
 
-	const { scrollYProgress } = useScroll(containerRef.current);
-
-	const skillRef = useRef();
+	const skillRef =
+		useRef() as React.MutableRefObject<HTMLInputElement>;
 	// const isSkillRefInView = useInView(skillRef, {once:true});
 	const isSkillRefInView = useInView(skillRef, { margin: '-100px' });
 
-	const experienceRef = useRef();
+	const experienceRef =
+		useRef() as React.MutableRefObject<HTMLInputElement>;
 	const isExperienceRefInView = useInView(experienceRef, {
 		margin: '-100px',
 	});
