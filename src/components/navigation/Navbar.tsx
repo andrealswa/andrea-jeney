@@ -96,7 +96,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: NavbarProps) => {
 					/>
 				</Link>
 				<Link
-					href="https://www.linkedin.com/in/andrea-swartz/"
+					href="https://www.linkedin.com/in/andrea-jeney/"
 					target="_blank">
 					<Image src="/linkedin.svg" alt="" width={24} height={24} />
 				</Link>
