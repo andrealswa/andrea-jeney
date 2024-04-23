@@ -28,17 +28,22 @@ const About = () => {
 				ref={containerRef}>
 				{/* TEXT CONTAINER */}
 				<div className="p-4 sm:p-8 md:p-8 lg:p-12 xl:p-12 md:pt-0 lg:pt-0 xl:pt-0 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
-					{/* BIOGRAPHY CONTAINER */}
 					<div className="flex flex-col gap-12 justify-center">
-						{/* BIOGRAPHY IMAGE */}
-
-						{/* BIOGRAPHY TITLE */}
-						<h1 className="font-bold text-2xl">EDUCATION</h1>
-						{/* BIOGRAPHY DESC */}
-						<p className="text-lg">
-							University of Windsor - Bachelors of Computer Science
-							degree.
-						</p>
+						<motion.h1
+							initial={{ x: '-300px' }}
+							animate={isSkillRefInView ? { x: 0 } : {}}
+							transition={{ delay: 0.2 }}
+							className="font-bold text-2xl">
+							<h1 className="font-bold text-2xl">EDUCATION</h1>
+							<div className="border-outline outline mt-12 p-10 rounded ">
+								<span className="text-lg font-bold pb-5">
+									University of Windsor
+								</span>
+								<p className="text-m pt-5">
+									Bachelor of Science - Computer Science degree.
+								</p>
+							</div>
+						</motion.h1>
 
 						{/* SKILLS CONTAINER */}
 						<div
@@ -57,67 +62,64 @@ const About = () => {
 								initial={{ x: '-300px' }}
 								animate={isSkillRefInView ? { x: 0 } : {}}
 								className="flex gap-4 flex-wrap">
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									JavaScript
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									TypeScript
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									React.js
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									Next.js
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									Lodash
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									HTML5
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									SCSS
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									Tailwind CSS
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									Python
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									Django
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									Node.js
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Angular
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									GraphQL
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									HTML5
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									SCSS
+								</div>
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									Tailwind CSS
+								</div>
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									Next.js
+								</div>
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									Python
+								</div>
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									Django
+								</div>
+								<div className="rounded  p-2 text-sm bg-black text-white">
+									Node.js
+								</div>
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Framer Motion
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Webpack
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Vite
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-									Docker
-								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									AWS
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Firebase
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Vercel
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Git
 								</div>
-								<div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+								<div className="rounded  p-2 text-sm bg-black text-white">
 									Figma
 								</div>
 							</motion.div>

@@ -1,4 +1,5 @@
 'use client';
+import AnimatedText from '@/components/animatedtext/AnimatedText';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -48,6 +49,8 @@ const Portfolio = () => {
 
 	const { scrollYProgress } = useScroll(ref.current);
 	const x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%']);
+
+	const endText = 'Thanks for visiting';
 	return (
 		<motion.div
 			className="h-full"
@@ -65,8 +68,8 @@ const Portfolio = () => {
 							<div
 								className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
 								key={item.id}>
-								<div className="flex flex-col gap-8 text-white">
-									<h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+								<div className="flex flex-col gap-8 ">
+									<h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl text-white dark:invert">
 										{item.title}
 									</h1>
 									<div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
@@ -109,7 +112,28 @@ const Portfolio = () => {
 				</div>
 			</div>
 			<div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center dark:invert">
-				<h1 className="text-8xl">Do you have a project?</h1>
+				{/* <h1 className="text-8xl">Thanks for visiting 👩🏼‍💻😊</h1> */}
+				{/* <AnimatedText text="Thanks for visiting" /> */}
+				<div className="h-1/2 lg:h-1/2 lg:w-1/2 flex pt-10 items-center justify-center text-6xl">
+					<motion.div>
+						{endText.split('').map((letter, index) => (
+							<motion.span
+								key={index}
+								initial={{ opacity: 1 }}
+								animate={{ opacity: 0 }}
+								transition={{
+									duration: 3,
+									repeat: Infinity,
+									delay: index * 0.1,
+								}}>
+								{/* <h1 className="text-4xl" key={index}> */}
+								{letter}
+								{/* </h1> */}
+							</motion.span>
+						))}
+						👩🏼‍💻😊
+					</motion.div>
+				</div>
 				<div className="relative">
 					<motion.svg
 						animate={{ rotate: 360 }}
@@ -128,14 +152,14 @@ const Portfolio = () => {
 						</defs>
 						<text fill="#000">
 							<textPath xlinkHref="#circlePath" className="text-xl">
-								Front-end Developer and UI Designer
+								Andrea Jeney Software Dev Portfolio
 							</textPath>
 						</text>
 					</motion.svg>
 					<Link
-						href="/contact"
+						href="/"
 						className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center">
-						Hire Me
+						Home
 					</Link>
 				</div>
 			</div>
