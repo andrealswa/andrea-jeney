@@ -132,7 +132,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: NavbarProps) => {
 								variants={listItemVariants}
 								className=""
 								key={route.title}>
-								<Link href={route.url}>{route.title}</Link>
+								<Link href={route.url} target="_self">
+									{route.title}
+								</Link>
 							</motion.div>
 						))}
 					</motion.div>
