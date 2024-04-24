@@ -57,7 +57,7 @@ const Portfolio = () => {
 			animate={{ y: '0%' }}
 			transition={{ duration: 1 }}>
 			<div className="h-[600vh] relative">
-				<div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+				<div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-7xl text-center">
 					Checkout some of my projects
 				</div>
 				<div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -111,8 +111,6 @@ const Portfolio = () => {
 				</div>
 			</div>
 			<div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center dark:invert">
-				{/* <h1 className="text-8xl">Thanks for visiting 👩🏼‍💻😊</h1> */}
-				{/* <AnimatedText text="Thanks for visiting" /> */}
 				<div className="h-1/2 lg:h-1/2 lg:w-1/2 flex pt-10 items-center justify-center text-6xl">
 					<motion.div>
 						{endText.split('').map((letter, index) => (
