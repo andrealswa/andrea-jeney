@@ -28,6 +28,7 @@ export default function Home() {
 				{/* <div className="h-1/2 m:h-full lg:w-1/2 flex items-end relative"> */}
 				<div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
 					<motion.div
+						className="h-[270px] w-[270px]"
 						whileHover={{
 							rotateY: [360, 0, 360],
 							y: [0, -30, 0],
