@@ -37,11 +37,11 @@ const About = () => {
 							className="font-bold text-2xl">
 							EDUCATION
 							<div className="border-outline outline mt-12 p-10 rounded">
-								<span className="text-lg font-bold pb-5">
+								<span className="text-xlg font-bold pb-5">
 									University of Windsor
 								</span>
-								<p className="text-m pt-5">
-									Bachelor of Science - Computer Science degree.
+								<p className="font-medium pt-5">
+									Bachelor of Science - Computer Science
 								</p>
 							</div>
 						</motion.h1>
