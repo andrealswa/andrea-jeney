@@ -19,7 +19,7 @@ const items = [
 		id: 2,
 		color: 'from-blue-300 to-violet-300',
 		title: 'Diversify Computer Science',
-		desc: 'Deployed with Firebase.',
+		desc: 'Created using Angular, TypeScript and Firebase NoSQL database services in collaboration with the University of Windsor Google Developers Club. Deployed using the Firebase CLI.',
 		img: '/DiversifyCompSci.png',
 		githubLink:
 			'https://github.com/andrealswa/diversifycomputerscience',
@@ -67,7 +67,7 @@ const Portfolio = () => {
 							<div
 								className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
 								key={item.id}>
-								<div className="flex flex-col gap-8 ">
+								<div className="flex flex-col gap-8">
 									<h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl text-white dark:invert">
 										{item.title}
 									</h1>
@@ -138,11 +138,11 @@ const Portfolio = () => {
 							repeat: Infinity,
 						}}
 						viewBox="0 0 300 300"
-						className="w-64 h-64 md:w-[500px] md:h-[500px] ">
+						className="w-64 h-64 md:w-[500px] md:h-[500px]">
 						<defs>
 							<path
 								id="circlePath"
-								d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+								d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0"
 							/>
 						</defs>
 						<text fill="#000">

@@ -36,7 +36,7 @@ const About = () => {
 							transition={{ delay: 0.2 }}
 							className="font-bold text-2xl">
 							EDUCATION
-							<div className="border-outline outline mt-12 p-10 rounded ">
+							<div className="border-outline outline mt-12 p-10 rounded">
 								<span className="text-lg font-bold pb-5">
 									University of Windsor
 								</span>
@@ -166,26 +166,26 @@ const About = () => {
 									{/* LINE */}
 									<div className="w-1 h-full bg-gray-600 rounded relative">
 										{/* LINE CIRCLE */}
-										<div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+										<div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2" />
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[150px] "></div>
+								<div className="w-[150px]" />
 							</div>
 							{/* EXPERIENCE LIST ITEM */}
 							<div className="flex justify-between h-48">
 								{/* LEFT */}
-								<div className="w-[150px] "></div>
+								<div className="w-[150px]" />
 								{/* CENTER */}
 								<div className="w-[50px] flex justify-center">
 									{/* LINE */}
 									<div className="w-1 h-full bg-gray-600 rounded relative">
 										{/* LINE CIRCLE */}
-										<div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+										<div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2" />
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[150px] ">
+								<div className="w-[150px]">
 									<div className="bg-white p-3 font-semibold rounded-r-lg rounded-b-lg">
 										Software Developer
 										{/* JOB DESC */}
@@ -202,7 +202,7 @@ const About = () => {
 							{/* EXPERIENCE LIST ITEM */}
 							<div className="flex justify-between h-48 sm:max-w-[400px]">
 								{/* LEFT */}
-								<div className="w-[150px] ">
+								<div className="w-[150px]">
 									{/* JOB TITLE */}
 									<div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
 										Frontend Developer
@@ -221,11 +221,11 @@ const About = () => {
 									{/* LINE */}
 									<div className="w-1 h-full bg-gray-600 rounded relative">
 										{/* LINE CIRCLE */}
-										<div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+										<div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2" />
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[150px]"></div>
+								<div className="w-[150px]" />
 							</div>
 						</motion.div>
 					</div>
