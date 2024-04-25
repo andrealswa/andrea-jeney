@@ -35,7 +35,7 @@ const About = () => {
 							animate={isSkillRefInView ? { x: 0 } : {}}
 							transition={{ delay: 0.2 }}
 							className="font-bold text-2xl">
-							<h1 className="font-bold text-2xl">EDUCATION</h1>
+							EDUCATION
 							<div className="border-outline outline mt-12 p-10 rounded ">
 								<span className="text-lg font-bold pb-5">
 									University of Windsor
@@ -149,7 +149,7 @@ const About = () => {
 							{/* EXPERIENCE LIST ITEM */}
 							<div className="flex justify-between h-48">
 								{/* LEFT */}
-								<div className="w-[200px] min-w-100">
+								<div className="w-[150px] min-w-100">
 									{/* JOB TITLE */}
 									<div className="bg-white p-3 w-full font-semibold rounded-b-lg rounded-s-lg">
 										Software Engineer
@@ -162,7 +162,7 @@ const About = () => {
 									</div>
 								</div>
 								{/* CENTER */}
-								<div className="w-[100px] flex justify-center">
+								<div className="w-[50px] flex justify-center">
 									{/* LINE */}
 									<div className="w-1 h-full bg-gray-600 rounded relative">
 										{/* LINE CIRCLE */}
@@ -170,14 +170,14 @@ const About = () => {
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[200px] "></div>
+								<div className="w-[150px] "></div>
 							</div>
 							{/* EXPERIENCE LIST ITEM */}
 							<div className="flex justify-between h-48">
 								{/* LEFT */}
-								<div className="w-[200px] "></div>
+								<div className="w-[150px] "></div>
 								{/* CENTER */}
-								<div className="w-[100px] flex justify-center">
+								<div className="w-[50px] flex justify-center">
 									{/* LINE */}
 									<div className="w-1 h-full bg-gray-600 rounded relative">
 										{/* LINE CIRCLE */}
@@ -185,7 +185,7 @@ const About = () => {
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[200px] ">
+								<div className="w-[150px] ">
 									<div className="bg-white p-3 font-semibold rounded-r-lg rounded-b-lg">
 										Software Developer
 										{/* JOB DESC */}
@@ -200,9 +200,9 @@ const About = () => {
 								</div>
 							</div>
 							{/* EXPERIENCE LIST ITEM */}
-							<div className="flex justify-between h-48">
+							<div className="flex justify-between h-48 sm:max-w-[400px]">
 								{/* LEFT */}
-								<div className="w-[200px] ">
+								<div className="w-[150px] ">
 									{/* JOB TITLE */}
 									<div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
 										Frontend Developer
@@ -217,7 +217,7 @@ const About = () => {
 									</div>
 								</div>
 								{/* CENTER */}
-								<div className="w-[100px] flex justify-center">
+								<div className="w-[50px] flex justify-center">
 									{/* LINE */}
 									<div className="w-1 h-full bg-gray-600 rounded relative">
 										{/* LINE CIRCLE */}
@@ -225,7 +225,7 @@ const About = () => {
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[200px] "></div>
+								<div className="w-[150px] w-full sm:w-[150px]"></div>
 							</div>
 						</motion.div>
 					</div>

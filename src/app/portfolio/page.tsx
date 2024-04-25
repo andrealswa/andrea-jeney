@@ -123,9 +123,7 @@ const Portfolio = () => {
 									repeat: Infinity,
 									delay: index * 0.1,
 								}}>
-								{/* <h1 className="text-4xl" key={index}> */}
 								{letter}
-								{/* </h1> */}
 							</motion.span>
 						))}
 						👩🏼‍💻😊
