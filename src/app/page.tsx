@@ -12,12 +12,13 @@ export default function Home() {
 			transition={{ duration: 1 }}>
 			<div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 				{/* TEXT CONTAINER */}
-				<div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-start justify-center">
+				<div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 items-start justify-center">
 					{/* TITLE */}
 					<h1 className="text-4xl md:text-6xl font-bold">
 						Andrea Jeney
 					</h1>
 					{/* DESC */}
+					<p className="md:text-3xl">Software Engineer</p>
 					<p className="md:text-l">
 						I bridge the gap between design and engineering — creating
 						things that look pretty but are built well under the
