@@ -86,7 +86,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: NavbarProps) => {
 				/>
 			</div>
 			{/* SOCIAL */}
-			<div className="hidden md:flex gap-4 w-1/3">
+			<div className="hidden md:flex md:justify-end gap-4 w-1/3">
 				<Link href="https://github.com/andrealswa" target="_blank">
 					<Image
 						src="/github-mark.svg"
