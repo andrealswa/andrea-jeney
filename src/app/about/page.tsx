@@ -225,7 +225,7 @@ const About = () => {
 									</div>
 								</div>
 								{/* RIGHT */}
-								<div className="w-[150px] w-full sm:w-[150px]"></div>
+								<div className="w-[150px]"></div>
 							</div>
 						</motion.div>
 					</div>
