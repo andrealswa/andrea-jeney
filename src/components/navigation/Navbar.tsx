@@ -9,6 +9,7 @@ const routes: NavRoute[] = [
 	{ url: '/', title: 'Home' },
 	{ url: '/about', title: 'About' },
 	{ url: '/portfolio', title: 'Portfolio' },
+	{ url: '/mirror', title: 'Mirror' },
 ];
 
 interface NavbarProps {
