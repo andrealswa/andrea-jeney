@@ -20,9 +20,8 @@ export default function Home() {
 					{/* DESC */}
 					<p className="md:text-3xl">Software Engineer</p>
 					<p className="md:text-l">
-						I bridge the gap between design and engineering — creating
-						things that look pretty with a robust build under the
-						surface.
+						Creating visually appealing and intuitive user experiences
+						with a robust build under the surface.
 					</p>
 				</div>
 				{/* IMAGE CONTAINER */}
