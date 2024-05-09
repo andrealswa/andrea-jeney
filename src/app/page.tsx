@@ -21,7 +21,7 @@ export default function Home() {
 					<p className="md:text-3xl">Software Engineer</p>
 					<p className="md:text-l">
 						I bridge the gap between design and engineering — creating
-						things that look pretty but are built well under the
+						things that look pretty with a robust build under the
 						surface.
 					</p>
 				</div>
